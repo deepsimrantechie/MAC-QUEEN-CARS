@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { assets } from "../assets/assets";
 
 const Services = () => {
+  // Store the index of the currently active card
+  const [activeCardIndex, setActiveCardIndex] = useState(null);
+
   return (
     <div className="bg-gray-50 py-16">
       {/* Main Section */}
@@ -30,22 +33,30 @@ const Services = () => {
           <ServiceCard
             title="Certified Mechanics"
             description="Skilled experts for quality vehicle care"
-            imgSrc=""
+            imgSrc={assets.mechanism}
+            isActive={activeCardIndex === 0}
+            onClick={() => setActiveCardIndex(0)}
           />
           <ServiceCard
             title="Popular Brands"
             description="Top trusted brands"
-            imgSrc=""
+            imgSrc={assets.popular}
+            isActive={activeCardIndex === 1}
+            onClick={() => setActiveCardIndex(1)}
           />
           <ServiceCard
             title="Reasonable Price"
             description="Quality service at an affordable price"
-            imgSrc=""
+            imgSrc={assets.price}
+            isActive={activeCardIndex === 2}
+            onClick={() => setActiveCardIndex(2)}
           />
           <ServiceCard
             title="Best Quality Care"
             description="Premium care for lasting results"
-            imgSrc=""
+            imgSrc={assets.best}
+            isActive={activeCardIndex === 3}
+            onClick={() => setActiveCardIndex(3)}
           />
         </div>
       </div>
@@ -53,8 +64,14 @@ const Services = () => {
   );
 };
 
-const ServiceCard = ({ title, description, imgSrc }) => (
-  <div className="bg-white shadow-md hover:shadow-lg rounded-2xl p-6 text-center transition duration-300 border border-gray-200">
+// ServiceCard component
+const ServiceCard = ({ title, description, imgSrc, isActive, onClick }) => (
+  <div
+    onClick={onClick}
+    className={`shadow-md hover:shadow-lg rounded-2xl p-6 text-center transition duration-300 border border-gray-200 ${
+      isActive ? "bg-black text-white" : "bg-white text-gray-800"
+    }`}
+  >
     <div className="w-12 h-12 mx-auto mb-4 border border-gray-300 rounded-full flex items-center justify-center overflow-hidden">
       {imgSrc ? (
         <img src={imgSrc} alt="Icon" className="w-full h-full object-cover" />
@@ -62,8 +79,8 @@ const ServiceCard = ({ title, description, imgSrc }) => (
         <div className="bg-gray-300 w-full h-full" /> // Placeholder for missing image
       )}
     </div>
-    <h2 className="text-lg font-semibold text-gray-800">{title}</h2>
-    <p className="text-sm text-gray-600 mt-2">{description}</p>
+    <h2 className="text-lg font-semibold">{title}</h2>
+    <p className="text-sm mt-2">{description}</p>
   </div>
 );
 

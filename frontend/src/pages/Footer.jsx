@@ -28,7 +28,7 @@ const Footer = () => {
           <img
             src={assets.logo}
             alt="Auto Haven Logo"
-            className="w-32 h-10 mx-auto lg:mx-0"
+            className="w-48 h-10 mx-auto lg:mx-0"
           />
           <p className="text-lg text-center lg:text-left">
             Auto Haven is your one-stop destination for hassle-free car buying.
@@ -36,22 +36,22 @@ const Footer = () => {
           </p>
           <div className="flex space-x-2 justify-center lg:justify-start">
             <img
-              src={assets.icon1}
+              src={assets.twitter}
               alt="Facebook"
               className="w-10 h-10 rounded-full border border-red-700"
             />
             <img
-              src={assets.icon2}
+              src={assets.facebook}
               alt="Twitter"
               className="w-10 h-10 rounded-full border border-red-700"
             />
             <img
-              src={assets.icon3}
+              src={assets.instagram}
               alt="Instagram"
               className="w-10 h-10 rounded-full border border-red-700"
             />
             <img
-              src={assets.icon4}
+              src={assets.linkdin}
               alt="LinkedIn"
               className="w-10 h-10 rounded-full border border-red-700"
             />

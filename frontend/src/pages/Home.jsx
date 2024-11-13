@@ -8,10 +8,11 @@ const Home = () => {
       <div className="flex flex-col lg:flex-row px-10 py-20 space-y-10 lg:space-y-0 lg:space-x-8 items-center">
         {/* Left Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
-          <h1 className="text-5xl font-bold leading-snug">
+          <h1 className="text-5xl font-bold leading-snug animate-slideUp">
             Drive Home With <br /> Your Perfect Car
           </h1>
-          <p className="text-lg leading-relaxed text-gray-300">
+
+          <p className="text-lg leading-relaxed text-gray-300 ">
             Get behind the wheel of your dream car. Explore our extensive
             inventory and take the first step towards your next adventure.
           </p>
@@ -32,8 +33,8 @@ const Home = () => {
       </div>
 
       {/* Search Bar Section */}
-      <div className="max-w-5xl w-full mx-auto text-black bg-gray-100 rounded-2xl shadow-md shadow-gray-500 py-8 px-10 mt-10">
-        <h1 className="text-3xl font-semibold text-gray-900 text-center mb-6">
+      <div className="max-w-5xl w-full mx-auto animate-slideUp  text-black animate- bg-gray-100 rounded-2xl shadow-md shadow-gray-500 py-8 px-10 mt-10">
+        <h1 className="text-3xl font-semibold text-gray-900 text-center mb-6 ">
           Search Our 3000 Vehicles
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">

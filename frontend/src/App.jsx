@@ -8,6 +8,7 @@ import Luxurious from "./pages/Luxurious";
 import AboutCar from "./pages/AboutCar";
 import Explore from "./pages/Explore";
 import Footer from "./pages/Footer";
+import Header from "./pages/Header";
 
 const App = () => {
   return (
@@ -16,7 +17,6 @@ const App = () => {
         <Navbar />
         <Home />
       </div>
-
       <Services />
       <Brands />
       <Luxurious />
