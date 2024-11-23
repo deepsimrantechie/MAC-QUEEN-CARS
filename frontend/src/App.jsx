@@ -1,29 +1,52 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Search from "./components/Search";
 import Services from "./pages/Services";
-import Brands from "./components/Brands";
 import Luxurious from "./pages/Luxurious";
+import Brands from "./components/Brands";
 import AboutCar from "./pages/AboutCar";
 import Explore from "./pages/Explore";
 import Footer from "./pages/Footer";
-import Header from "./pages/Header";
+import Login from "./components/Login";
+import Signup from "./components/SIgnup";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <>
-      <div class="bg-black min-h-screen">
+    <div>
+      <Router>
+        {/* Navbar */}
+
+        {/* Single-page layout */}
         <Navbar />
-        <Home />
-      </div>
-      <Services />
-      <Brands />
-      <Luxurious />
-      <AboutCar />
-      <Explore />
-      <Footer />
-    </>
+        <div className="content">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Home />
+                  <Services />
+                  <Brands />
+                  <Luxurious />
+                  <AboutCar />
+                  <Explore />
+                </>
+              }
+            />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/service" element={<Services />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+
+        <Footer />
+      </Router>
+    </div>
   );
 };
 

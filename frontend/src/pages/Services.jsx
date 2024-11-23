@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   // Store the index of the currently active card
@@ -20,11 +21,13 @@ const Services = () => {
               brands. Find the one that suits your style and budget.
             </p>
           </div>
-          <img
-            src={assets.car}
-            alt="Car"
-            className="mt-8 rounded-lg shadow-lg"
-          />
+          <Link to="/">
+            <img
+              src={assets.car}
+              alt="Car"
+              className="mt-8 rounded-lg shadow-lg"
+            />
+          </Link>
         </div>
 
         {/* Right Section */}
@@ -79,6 +82,7 @@ const ServiceCard = ({ title, description, imgSrc, isActive, onClick }) => (
         <div className="bg-gray-300 w-full h-full" /> // Placeholder for missing image
       )}
     </div>
+
     <h2 className="text-lg font-semibold">{title}</h2>
     <p className="text-sm mt-2">{description}</p>
   </div>

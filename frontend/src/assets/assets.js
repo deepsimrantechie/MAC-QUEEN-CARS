@@ -26,6 +26,8 @@ import ferrari from "./ferrari.png";
 import cadillac from "./cadillac.png";
 import rover from "./rover.png";
 import carbmw from "./carbmw.png";
+import back from "./back.png";
+import contact from "./contact.png";
 
 export const assets = {
   logo,
@@ -56,4 +58,6 @@ export const assets = {
   cadillac,
   rover,
   carbmw,
+  back,
+  contact,
 };
