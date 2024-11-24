@@ -1,6 +1,8 @@
 {
-  "rewrites": [{ "source": "/custom-path", "destination": "/actual-path" }],
-  "redirects": [
-    { "source": "/old-route", "destination": "/new-route", "permanent": true }
+  "rewrites": [
+    {
+      "source": "/product/:id",
+      "destination": "/products/[id]"
+    }
   ]
 }
