@@ -1,3 +1,6 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [{ "source": "/custom-path", "destination": "/actual-path" }],
+  "redirects": [
+    { "source": "/old-route", "destination": "/new-route", "permanent": true }
+  ]
 }
