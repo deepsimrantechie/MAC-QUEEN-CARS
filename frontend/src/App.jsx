@@ -9,7 +9,7 @@ import AboutCar from "./pages/AboutCar";
 import Explore from "./pages/Explore";
 import Footer from "./pages/Footer";
 import Login from "./components/Login";
-import Signup from "./components/SIgnup";
+import Signup from "./components/Signup";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
