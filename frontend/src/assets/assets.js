@@ -5,7 +5,7 @@ import car from "./car.png";
 import bmw from "./bmw.png";
 import mercedes from "./mercedes.png";
 import audi from "./audi.png";
-import volkswagen from "./volkswagen.png";
+//import volkswagen from "./volkswagen.png";
 import rolls from "./rolls.png";
 import arrow from "./arrow.png";
 import royace from "./royace.png";
@@ -37,7 +37,7 @@ export const assets = {
   bmw,
   mercedes,
   audi,
-  volkswagen,
+  //volkswagen,
   rolls,
   arrow,
   royace,
