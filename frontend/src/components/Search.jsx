@@ -8,7 +8,7 @@ const Search = () => {
         <select
           id="car-select"
           name="cars"
-          className="px-2 py-2 rounded-lg border border-black"
+          className="px-2 py-2 rounded-lg border border-black bg-gray-50"
         >
           <option value="default" disabled selected>
             Select your car

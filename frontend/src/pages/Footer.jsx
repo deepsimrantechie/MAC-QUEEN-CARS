@@ -25,11 +25,7 @@ const Footer = () => {
       <div className="mt-16 flex items-start justify-between px-10 lg:px-32 space-y-8 lg:space-y-0 flex-wrap lg:flex-nowrap">
         {/* Logo and About Section */}
         <div className="w-full lg:w-1/4 space-y-6">
-          <img
-            src={assets.logo}
-            alt="Auto Haven Logo"
-            className="w-48 h-10 mx-auto lg:mx-0"
-          />
+          <a className="btn btn-ghost text-2xl">MacQueen</a>
           <p className="text-lg text-center lg:text-left">
             Auto Haven is your one-stop destination for hassle-free car buying.
             Find, compare, and try.

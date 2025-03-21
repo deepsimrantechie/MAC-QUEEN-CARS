@@ -26,11 +26,11 @@ const AboutCar = () => {
       </div>
 
       {/* Right Side */}
-      <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
+      <div className="w-full lg:w-1/2 mt-10 lg:mt-0 px-6">
         <img
           src={assets.car}
           alt="Car Image"
-          className=" object-cover rounded-lg  item-center justify-center mt-20 w-90 shadow-2xl shadow-gray-900"
+          className="object-cover rounded-lg w-full h-72 lg:h-auto shadow-2xl shadow-gray-900"
         />
       </div>
     </div>

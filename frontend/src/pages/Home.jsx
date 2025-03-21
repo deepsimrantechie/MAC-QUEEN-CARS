@@ -41,7 +41,7 @@ const Home = () => {
           <select
             id="car-select"
             name="cars"
-            className="px-4 py-3 rounded-lg border border-gray-300 w-full md:w-auto focus:outline-none focus:ring-2 focus:ring-red-700"
+            className="px-4 py-3 rounded-lg border bg-white border-gray-300 w-full md:w-auto focus:outline-none focus:ring-2 focus:ring-red-700"
           >
             <option value="default" disabled selected>
               Select your car
@@ -55,7 +55,7 @@ const Home = () => {
           <select
             id="city-select"
             name="city"
-            className="px-4 py-3 rounded-lg border border-gray-300 w-full md:w-auto focus:outline-none focus:ring-2 focus:ring-red-700"
+            className="px-4 py-3 rounded-lg border bg-white border-gray-300 w-full md:w-auto focus:outline-none focus:ring-2 focus:ring-red-700"
           >
             <option value="default" disabled selected>
               Choose the city
@@ -69,7 +69,7 @@ const Home = () => {
           <select
             id="category-select"
             name="category"
-            className="px-4 py-3 rounded-lg border border-gray-300 w-full md:w-auto focus:outline-none focus:ring-2 focus:ring-red-700"
+            className="px-4 py-3 rounded-lg border border-gray-300 bg-white w-full md:w-auto focus:outline-none focus:ring-2 focus:ring-red-700"
           >
             <option value="default" disabled selected>
               Choose the category

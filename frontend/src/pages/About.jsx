@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="bg-gray-200 min-h-screen">
-      {/*--the header serction----*/}
+      {/*--the header section----*/}
       <Link
         to="/"
         className="absolute mt-4 ml-4 border border-white  rounded-full"

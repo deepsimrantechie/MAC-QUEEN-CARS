@@ -26,14 +26,14 @@ const Header = () => {
   };
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6">
       {/* Left Side Buttons */}
-      <div className="flex-shrink-0 space-y-2">
+      <div className="flex-shrink-0 space-y-4 lg:space-y-2 w-full lg:w-auto">
         {items.map((item, index) => (
           <button
             key={item.id}
             onClick={() => handleClick(index)}
-            className="bg-blue-500 text-white px-4 py-2 rounded w-full"
+            className="bg-blue-500 text-white px-4 py-2 rounded w-full lg:w-auto"
           >
             {activeIndex === index ? "Hide Description" : item.label}
           </button>
@@ -41,7 +41,7 @@ const Header = () => {
       </div>
 
       {/* Right Side Description */}
-      <div className="flex-grow bg-gray-100 p-4 rounded">
+      <div className="flex-grow bg-gray-100 p-4 rounded w-full lg:w-2/3">
         {activeIndex !== null && <p>{items[activeIndex].description}</p>}
       </div>
     </div>

@@ -15,7 +15,7 @@ import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Router>
         {/* Navbar */}
 
